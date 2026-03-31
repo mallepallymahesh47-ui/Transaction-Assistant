@@ -10,4 +10,7 @@ dependencies = [
     "langchain-groq",
     "langchain-huggingface",
     "python-dotenv",
+    "sentence-transformers",
+    "fastapi",
+    "faiss"
 ]
