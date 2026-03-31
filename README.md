@@ -1,14 +1,9 @@
 # Transaction Assistant
+#### AI-powered transaction assistant that lets you query your payment history in plain English
 
 ### Managing personal finances today means scrolling through long lists of transactions, manually searching for specific payments, and struggling to recall details. Traditional payment apps offer filters and search bars, but they require the user to already know what they're looking for — and they return raw data, not answers.
 
 ### Transaction Assistant solves this by layering a natural language AI assistant on top of a standard transaction dashboard. Instead of filtering and scrolling, users simply ask questions in plain English — and get precise, context-aware answers instantly.
-
-### Under the hood, PayBot uses a RAG (Retrieval-Augmented Generation) pipeline:
-
-### Transaction data is converted into vector embeddings using HuggingFace's sentence-transformers
-### Queries are matched to the most relevant transactions via FAISS similarity search
-### The Groq LLM (Llama 3.3) generates concise, accurate responses grounded in your actual data — not hallucinations
 
 ## Features
 
@@ -81,16 +76,12 @@
 
 3. **Open Browser**
    - Navigate to `http://localhost:5173`
-   - Click the chat icon (💬) to ask questions about transactions
+   - Click the chat icon to ask questions about transactions
 
 ### Example Queries
 - "Show me failed transactions"
 - "How much did I spend on groceries?"
 - "What is the status of transaction ID 1234?"
-
-## Chatbot Assistant
-
-The Transaction Assistant is a floating AI chatbot that appears on every page of the application. It uses advanced Retrieval-Augmented Generation (RAG) technology to provide accurate answers about your transaction data.
 
 ### How It Works
 1. **Data Processing**: Transaction data from `src/data/transactions.json` is loaded and converted into searchable documents
@@ -109,14 +100,14 @@ The Transaction Assistant is a floating AI chatbot that appears on every page of
 ## Project Structure
 
 ```
-2-Paybot/
+Transaction Assistant/
 ├── src/
 │   ├── components/     # React components
 │   ├── pages/         # Page components
 │   ├── data/          # Static data (transactions.json)
 │   └── utils/         # Helper functions
 ├── Bot/
-│   └── rag.py         # FastAPI backend with RAG
+│   └──rag.py         # FastAPI backend with RAG
 ├── public/            # Static assets
 ├── package.json       # Frontend dependencies
 ├── pyproject.toml     # Python project config
