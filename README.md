@@ -9,7 +9,6 @@
 
 - **AI Chatbot**: Floating chatbot assistant powered by RAG technology for natural language queries about transactions
 - **Real-time Queries**: Powered by RAG (Retrieval-Augmented Generation) for accurate answers
-- **Transaction Dashboard**: View balance, transaction history, and filter by status/type
 
 ## Tech Stack
 
