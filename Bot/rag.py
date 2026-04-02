@@ -27,7 +27,7 @@ if not GROQ_API_KEY:
 
 # FastAPI
 
-app = FastAPI(title="PayBot API")
+app = FastAPI(title="Transaction Assistant API")
 
 app.add_middleware(
     CORSMiddleware,
