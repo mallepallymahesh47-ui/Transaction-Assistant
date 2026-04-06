@@ -132,4 +132,4 @@ def chat_api(request: QueryRequest):
 
 @app.get("/")
 def home():
-    return {"message": "PayBot API is running 🚀"}
+    return {"message": "Transaction Assistant API is running"}
