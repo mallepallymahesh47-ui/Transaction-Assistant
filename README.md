@@ -25,40 +25,6 @@
 - FAISS vector database
 - CORS enabled for frontend integration
 
-## Installation
-
-### Prerequisites
-- Node.js 18+
-- Python 3.8+
-- Groq API key (for LLM)
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd 2-Paybot
-   ```
-
-2. **Backend Setup**
-   ```bash
-   # Install Python dependencies
-   pip install fastapi uvicorn langchain-huggingface langchain-groq python-dotenv
-
-   # Set up environment variables
-   # Create .env file in root directory
-   echo "GROQ_API_KEY=your_groq_api_key_here" > .env
-   ```
-
-3. **Frontend Setup**
-   ```bash
-   # Install Node dependencies
-   npm install
-
-   # Optional: Set API URL
-   echo "VITE_PAYBOT_API_URL=http://localhost:8000" > .env
-   ```
-
 ## Usage
 
 ### Start the Application
